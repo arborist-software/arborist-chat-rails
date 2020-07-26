@@ -1,3 +1,3 @@
 module ArboristRails
-  VERSION = %q{0.1.0}.freeze
+  VERSION = %q{0.2.0}.freeze
 end

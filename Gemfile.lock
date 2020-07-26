@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    arborist-rails (0.1.0)
+    arborist-rails (0.2.0)
       actionview (> 5.0)
       activesupport (> 5.0)
       jwt (> 2.0)
