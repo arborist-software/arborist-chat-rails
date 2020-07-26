@@ -1,6 +1,7 @@
 # Arborist Chat Rails
 
 [![Gem Version](https://badge.fury.io/rb/arborist_chat_rails.svg)](https://badge.fury.io/rb/arborist_chat_rails)
+![CI](https://github.com/arborist-software/arborist-chat-rails/workflows/CI/badge.svg?branch=master)
 
 adds arborists live chat widget to your rails app
 
@@ -12,7 +13,29 @@ Add this line to your application's Gemfile:
 gem 'arborist_chat_rails'
 ```
 
-And then run: - `bundle install` - `bin/rails g arborist_chat_rails:install --app_id=<app_id> --app_secret=<app_secret>`
+Install using bundler:
+
+```sh
+bundle install
+```
+
+Lastly, generate a default configuration using:
+
+```sh
+bin/rails g arborist_chat_rails:install --app_id=<app_id> --app_secret=<app_secret>
+```
+
+## Usage
+
+This gem will automatically add arborist live chat to all webpages by default, however you can
+opt out of showing chat on a page by adding a skip_after_action to the controller:
+
+```ruby
+class ExampleController < ApplicationController
+  # dont show arborist livechat
+  skip_after_action :include_arborist_livechat
+end
+```
 
 ## Development
 
