@@ -1,3 +1,3 @@
 module ArboristChatRails
-  VERSION = %q{0.3.3}.freeze
+  VERSION = %q{0.3.4}.freeze
 end

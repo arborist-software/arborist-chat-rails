@@ -1,3 +1,8 @@
+## [0.3.4] - 2020-07-26
+
+- updates default configuration to be less opinionated but
+  will only support anonomous users by default.
+
 ## [0.3.3] - 2020-07-25
 
 - fixes issue when jwt wasnt already required

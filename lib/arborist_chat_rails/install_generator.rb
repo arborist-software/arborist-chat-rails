@@ -22,12 +22,13 @@ class ArboristChatRails::InstallGenerator < Rails::Generators::Base
         config.arborist.app_id     = '#{options.dig(APP_ID)}'
         config.arborist.app_secret = '#{options.dig(APP_SECRET)}'
 
-        # used to resolve which fields to send to
-        # arborist to identify a user
+        # identifies a user. by default this is limited to anomous
+        # identification (note: this uses cookies so notify users 
+        # appropriately). the current_user lambda will be executed
+        # in the current controllers context so all methods in the
+        # controller will be available
         config.arborist.current_user = lambda do
-          current_user&.as_json(only: %i[email id]) || begin
-            { id: session[:arborist_id] ||= SecureRandom.uuid }
-          end
+          { id: session[:arborist_id] ||= SecureRandom.uuid }
         end
       end
     FILE
