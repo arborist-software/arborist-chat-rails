@@ -1,16 +1,16 @@
 require_relative %q{lib/arborist_chat_rails/version}
 
 Gem::Specification.new do |spec|
-  spec.authors               = %w{Leon Pearce}
+  spec.authors               = %w{Leon\ Pearce}
   spec.description           = %q{adds Arborist live chat to your web app}
   spec.email                 = %w{leonp1991@gmail.com}
-  spec.homepage              = %q{http://github.com/arborist-software/arborist-chat-rails}
+  spec.homepage              = %q{https://www.arborist.app}
   spec.name                  = %q{arborist_chat_rails}
   spec.required_ruby_version = Gem::Requirement.new(%q{>= 2.3.0})
   spec.summary               = %q{adds Arborist live chat to your web app}
   spec.version               = ArboristChatRails::VERSION
   spec.metadata.store %q{allowed_push_host}, %q{https://rubygems.org}
-  spec.metadata.store %q{changelog_uri},     %q{http://github.com/arborist-software/arborist-chat-rails/CHANGELOG.md}
+  spec.metadata.store %q{changelog_uri},     %q{http://github.com/arborist-software/arborist-chat-rails/blob/master/CHANGELOG.md}
   spec.metadata.store %q{homepage_uri},      spec.homepage
   spec.metadata.store %q{source_code_uri},   %q{http://github.com/arborist-software/arborist-chat-rails}
 

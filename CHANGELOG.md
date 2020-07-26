@@ -1,3 +1,7 @@
+## [0.3.5] - 2020-07-26
+
+- improvements to documentation
+
 ## [0.3.4] - 2020-07-26
 
 - updates default configuration to be less opinionated but

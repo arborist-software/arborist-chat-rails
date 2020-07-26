@@ -1,5 +1,7 @@
 # Arborist Chat Rails
 
+[![Gem Version](https://badge.fury.io/rb/arborist_chat_rails.svg)](https://badge.fury.io/rb/arborist_chat_rails)
+
 adds arborists live chat widget to your rails app
 
 ## Installation
