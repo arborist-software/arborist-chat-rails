@@ -1,16 +1,16 @@
-# Arborist Rails
+# Arborist Chat Rails
+
 adds arborists live chat widget to your rails app
 
 ## Installation
 
 Add this line to your application's Gemfile:
+
 ```ruby
-gem 'arborist-rails'
+gem 'arborist_chat_rails'
 ```
 
-And then run:
-    - `bundle install`
-    - `bin/rails g arborist-rails:install --app_id=<app_id> --app_secret=<app_secret>`
+And then run: - `bundle install` - `bin/rails g arborist_chat_rails:install --app_id=<app_id> --app_secret=<app_secret>`
 
 ## Development
 
@@ -20,5 +20,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/arborist-software/arborist-rails.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/arborist-software/arborist-chat-rails.

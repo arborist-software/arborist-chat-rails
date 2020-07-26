@@ -6,7 +6,7 @@ class ArboristChatRails::Railtie < Rails::Railtie
   config.arborist = ActiveSupport::OrderedOptions.new
 
   generators do
-    require %q{arborist/install_generator.rb}
+    require %q{arborist_chat_rails/install_generator.rb}
   end
 
   initializer %q{arborist} do |app|

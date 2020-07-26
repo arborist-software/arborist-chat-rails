@@ -1,4 +1,4 @@
-# require_relative %q{lib/arborist_chat_rails/version}
+require_relative %q{lib/arborist_chat_rails/version}
 
 Gem::Specification.new do |spec|
   spec.authors               = %w{Leon Pearce}
@@ -8,8 +8,7 @@ Gem::Specification.new do |spec|
   spec.name                  = %q{arborist_chat_rails}
   spec.required_ruby_version = Gem::Requirement.new(%q{>= 2.3.0})
   spec.summary               = %q{adds Arborist live chat to your web app}
-  spec.version               = %q{0.3.0} # ArboristChatRails::VERSION
-
+  spec.version               = ArboristChatRails::VERSION
   spec.metadata.store %q{allowed_push_host}, %q{https://rubygems.org}
   spec.metadata.store %q{changelog_uri},     %q{http://github.com/arborist-software/arborist-chat-rails/CHANGELOG.md}
   spec.metadata.store %q{homepage_uri},      spec.homepage
@@ -21,8 +20,8 @@ Gem::Specification.new do |spec|
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
 
-  spec.add_dependency %q{actionview},    %q{> 5.0}
-  spec.add_dependency %q{activesupport}, %q{> 5.0}
+  spec.add_dependency %q{actionview},    %q{> 3.0}
+  spec.add_dependency %q{activesupport}, %q{> 3.0}
   spec.add_dependency %q{jwt},           %q{> 2.0}
   spec.add_dependency %q{railties},      %q{> 3.0}
 
