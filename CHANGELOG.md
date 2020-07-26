@@ -1,3 +1,7 @@
+## [0.3.3] - 2020-07-25
+
+- fixes issue when jwt wasnt already required
+
 ## [0.3.2] - 2020-07-25
 
 - fixes issue with 0.3.1 publishing

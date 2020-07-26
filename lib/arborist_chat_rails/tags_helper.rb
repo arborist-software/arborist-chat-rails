@@ -1,5 +1,6 @@
 require %q{action_view}
 require %q{active_support}
+require %q{jwt}
 
 module ArboristChatRails::TagsHelper
   extend ActiveSupport::Concern
@@ -28,7 +29,7 @@ module ArboristChatRails::TagsHelper
       [%q{https://www.arborist.app}, path]
     end.join(%q{/})
   end
-
+  
   def token(config)
     JWT.encode(payload(config), config.app_secret, %q{HS256})
   end
