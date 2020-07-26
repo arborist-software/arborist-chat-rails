@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    arborist-chat-rails (0.2.0)
+    arborist-chat-rails (0.3.0)
       actionview (> 5.0)
       activesupport (> 5.0)
       jwt (> 2.0)
